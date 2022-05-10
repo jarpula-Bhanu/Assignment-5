@@ -1,0 +1,39 @@
+\documentclass[journal,12pt,twocolumn]{IEEEtran}
+\usepackage{hyperref}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{mathtools}
+\title{Assignment 5}
+\author{JARPULA BHANU PRASAD - AI21BTECH11015}
+\date{April 2022}
+\newcommand\Mycomb[2][^n]{\prescript{#1\mkern-0.5mu}{}C_{#2}}
+\begin{document}
+\maketitle
+\noindent \Large\underline{Download codes from}:\\
+\noindent \large Download python code from - \href{https://github.com/jarpula-Bhanu/Assignment-5/blob/main/codes/verify.py}{Python}\\ Download latex code from - \href{https://github.com/jarpula-Bhanu/Assignment-5/blob/main/Assignment5.tex}{Latex}
+\section{\large\underline{Problem-CBSE-11 Ex:16 Q)2}}
+\large \noindent Q) 4 cards are drawn from a well-shuffled deck of 52 cards. What is the probability of obtaining 3 diamonds and one spade?
+\section{\large\underline{Solution}}
+\noindent Let $X$ and $Y$ be events defined as, \\
+$X$ : "Picking three diamond card." \\
+$Y$ : "Picking a spade card." \\
+\begin{align}
+n(X) &= \Mycomb[13]{3} \\
+n(Y) &= \Mycomb[13]{1} \\
+n(X  Y) &= \Mycomb[13]{3} \times \Mycomb[13]{1} \\
+n(S) &= \Mycomb[52]{4} 
+\end{align}
+
+Where $S$ is the sample space. \\
+
+Now, probability of getting 3 diamonds and 1 spade is given by,
+\begin{align}
+Pr(X  Y) = \frac{n(X  Y)}{n(S)} \\
+Pr(X  Y) = \frac{\Mycomb[13]{3} \times \Mycomb[13]{1}}{\Mycomb[52]{4}} \\
+Pr(X  Y) = \frac{286}{20285} \\
+Pr(X  Y) = 0.0137 
+\end{align}
+
+$\therefore$ probability of getting 3 diamonds and 1 spade is 0.0137
+
+\end{document}
